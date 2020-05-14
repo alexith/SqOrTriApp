@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<toast> extends AppCompatActivity {
 
     public void showMeTheTruth(View view){
 

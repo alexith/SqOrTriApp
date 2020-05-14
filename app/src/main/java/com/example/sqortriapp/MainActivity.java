@@ -14,6 +14,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public class someNumbers{
+        int enteredNumbers;
+    }
+
+    someNumbers squareNumbers = new someNumbers();
+    someNumbers triangularNumbers = new someNumbers();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

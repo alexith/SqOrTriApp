@@ -19,36 +19,40 @@ public class MainActivity<integer> extends AppCompatActivity {
              int currentTriNumber = 1;
              int currentSqNumber = 1;
 
+
              someNumbers<integer>[] squareNumberList = new someNumbers[0];
              someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
 
-            for(n<=100){
+
+             for(n<=100){
                  currentSqNumber = n*n;
                  squareNumberList.add(currentSqNumber);
                  n++;
              }
 
-            for(n<=100){
+
+             for(n<=100){
                  currentTriNumber = currentTriNumber + i;
                  triangularNumbersList.add(currentTriNumber);
                  n++;
-            }
-            public boolean isNumberSq() {
-                if((squareNumberList.contains(enteredNumber)){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
+             }
 
-            public boolean isTheNumberTri(){
-                if((currentTriNumber.contains(enteredNumber)){
-                    return true;
-                }else{
+             public boolean isNumberSq() {
+                 if((squareNumberList.contains(enteredNumber)){
+                     return toast;
+                 }else{
                     return false;
-                }
-            }
-        }
+                 }
+             }
+
+             public boolean isTheNumberTri(){
+                 if((currentTriNumber.contains(enteredNumber)){
+                     return true;
+                 }else{
+                     return false;
+                 }
+             }
+         }
     }
 
 

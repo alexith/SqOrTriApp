@@ -12,7 +12,7 @@ public class MainActivity<integer> extends AppCompatActivity {
 
         final EditText[] enteredNumber = {(EditText) findViewById(R.id.enteredNumber)};
 
-         class someNumbers<I> {
+         class someNumbers{
 
              int i = 1;
              int n = 1;

@@ -12,22 +12,28 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
 
         final EditText[] enteredNumber = {(EditText) findViewById(R.id.enteredNumber)};
 
-         class someNumbers {
+         class someNumbers<I> {
 
-             int i;
-             int n;
-             int currentTriNumber;
-             int currentSqNumber;
+             int i = 1;
+             int n = 1;
+             int currentTriNumber = 1;
+             int currentSqNumber = 1;
 
 
-            someNumbers[] triangularNumbersList = new someNumbers[0];
-            someNumbers[] squareNumberList = new someNumbers[0];
+            someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
 
             for(n<=100){
-                currentSqNumber;
-                squareNumberList.add(currentSqNumber * currentSqNumber);
-                n++;
+                 currentSqNumber = n*n;
+                 squareNumberList.add(currentSqNumber);
+                 n++;
+             }
 
+            someNumbers<integer>[] squareNumberList = new someNumbers[0];
+
+            for(n<=100){
+                 currentTriNumber = currentTriNumber + i;
+                 currentTriNumber.add(currentTriNumber);
+                n++;
              }
              someNumbers() {
                  triangularNumber = triangularNumber + currentTriNumber;

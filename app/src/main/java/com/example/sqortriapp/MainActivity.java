@@ -46,8 +46,6 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

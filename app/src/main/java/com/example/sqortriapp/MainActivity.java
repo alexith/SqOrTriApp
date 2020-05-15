@@ -10,7 +10,7 @@ public class MainActivity<integer> extends AppCompatActivity {
 
     public boolean showMeTheTruth(View view){
 
-        final EditText[] enteredNumber = {(EditText) findViewById(R.id.enteredNumber)};
+        final EditText[] enteredNumber = {findViewById(R.id.enteredNumber)};
 
          class someNumbers{
 
@@ -19,8 +19,8 @@ public class MainActivity<integer> extends AppCompatActivity {
              int currentTriNumber = 1;
              int currentSqNumber = 1;
 
-
-            someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
+             someNumbers<integer>[] squareNumberList = new someNumbers[0];
+             someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
 
             for(n<=100){
                  currentSqNumber = n*n;
@@ -28,18 +28,15 @@ public class MainActivity<integer> extends AppCompatActivity {
                  n++;
              }
 
-            someNumbers<integer>[] squareNumberList = new someNumbers[0];
-
             for(n<=100){
                  currentTriNumber = currentTriNumber + i;
-                 currentTriNumber.add(currentTriNumber);
+                 triangularNumbersList.add(currentTriNumber);
                  n++;
-             }
-
-             public boolean isNumberSq() {
-                if (squareNumberList.contains(enteredNumber)) {
+            }
+            public boolean isNumberSq() {
+                if((squareNumberList.contains(enteredNumber)){
                     return true;
-                } else {
+                }else{
                     return false;
                 }
             }
@@ -47,7 +44,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             public boolean isTheNumberTri(){
                 if((currentTriNumber.contains(enteredNumber)){
                     return true;
-                } else {
+                }else{
                     return false;
                 }
             }

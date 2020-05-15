@@ -12,20 +12,30 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
 
         final EditText[] enteredNumber = {(EditText) findViewById(R.id.enteredNumber)};
 
-         class someNumbers{
+         class someNumbers {
 
-            int enteredNumbers;
-            int currentNumber = 1;
+             int i;
+             int n;
+             int currentTriNumber;
+             int currentSqNumber;
 
-            someNumbers<integer> squareNumbers = new someNumbers<integer>();
-            someNumbers<integer> triangularNumbers = new someNumbers<integer>();
 
-            int squareNumber = currentNumber * currentNumber;
+            someNumbers[] triangularNumbersList = new someNumbers[0];
+            someNumbers[] squareNumberList = new someNumbers[0];
 
-            int triangularNumber = triangularNumber + currentNumber;
+            for(n<=100){
+                currentSqNumber;
+                squareNumberList.add(currentSqNumber * currentSqNumber);
+                n++;
 
-            public boolean isNumberSq() {
-                if (enteredNumber[0] == squareNumbers) {
+             }
+             someNumbers() {
+                 triangularNumber = triangularNumber + currentTriNumber;
+             }
+
+
+             public boolean isNumberSq() {
+                if (squareNumber.contains(enteredNumber)) {
                     return true;
                 } else {
                     return false;

@@ -14,7 +14,6 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
 
          class someNumbers{
 
-
             int enteredNumbers;
             int currentNumber = 1;
 
@@ -24,7 +23,6 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
             squareNumber = currentNumber * currentNumber;
 
             triangularNumber = eachNumber + currentNumber;
-
 
             public boolean isNumberSq() {
                 if (enteredNumber[0] == squareNumbers) {
@@ -43,7 +41,6 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
             }
         }
     }
-
 
 
     @Override

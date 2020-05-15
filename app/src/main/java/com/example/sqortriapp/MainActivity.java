@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity<squareNumber, triangularNumber, integer, currentNumber> extends AppCompatActivity {
+public class MainActivity<integer> extends AppCompatActivity {
 
     public boolean showMeTheTruth(View view){
 
@@ -35,13 +35,9 @@ public class MainActivity<squareNumber, triangularNumber, integer, currentNumber
                  currentTriNumber.add(currentTriNumber);
                 n++;
              }
-             someNumbers() {
-                 triangularNumber = triangularNumber + currentTriNumber;
-             }
-
 
              public boolean isNumberSq() {
-                if (squareNumber.contains(enteredNumber)) {
+                if (squareNumberList.contains(enteredNumber)) {
                     return true;
                 } else {
                     return false;
@@ -49,7 +45,7 @@ public class MainActivity<squareNumber, triangularNumber, integer, currentNumber
             }
 
             public boolean isTheNumberTri(){
-                if(enteredNumber[0] == triangularNumbers){
+                if((currentTriNumber.contains(enteredNumber)){
                     return true;
                 } else {
                     return false;

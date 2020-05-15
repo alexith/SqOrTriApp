@@ -23,7 +23,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             private someNumbers<integer>[] squareNumberList = new someNumbers[0];
 
 
-            for(n<=100){
+            for(i<=100){
                 currentTriNumber = currentTriNumber + i;
                 triangularNumbersList.add(currentTriNumber);
                 n++;
@@ -35,21 +35,21 @@ public class MainActivity<integer> extends AppCompatActivity {
                 n++;
             }
 
-             public boolean isNumberSq() {
+            public boolean isNumberSq() {
                 if(squareNumberList.contains(enteredNumber){
                     Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
                 }
-            } else{
-                Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
-            }
-             public boolean isTheNumberTri() {
-                if((triangularNumbersList.contains(enteredNumber)){
-                    Toast.makeText(MainActivity.this, "THe no. is Triangular", Toast.LENGTH_SHORT).show();
-                }
-            } else{
-                Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
             }
 
+            public boolean isTheNumberTri() {
+                if((triangularNumbersList.contains(enteredNumber)){
+                    Toast.makeText(MainActivity.this, "THe no. is Triangular", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
+                    }
+            }
         }
     }
 

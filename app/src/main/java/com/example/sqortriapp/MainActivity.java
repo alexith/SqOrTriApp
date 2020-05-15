@@ -33,7 +33,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             for(n<=100){
                  currentTriNumber = currentTriNumber + i;
                  currentTriNumber.add(currentTriNumber);
-                n++;
+                 n++;
              }
 
              public boolean isNumberSq() {

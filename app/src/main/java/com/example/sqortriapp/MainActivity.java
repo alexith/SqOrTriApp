@@ -17,12 +17,12 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
             int enteredNumbers;
             int currentNumber = 1;
 
-            someNumbers squareNumbers = new someNumbers();
-            someNumbers triangularNumbers = new someNumbers();
+            someNumbers<integer> squareNumbers = new someNumbers<integer>();
+            someNumbers<integer> triangularNumbers = new someNumbers<integer>();
 
-            squareNumber = currentNumber * currentNumber;
+            int squareNumber = currentNumber * currentNumber;
 
-            triangularNumber = eachNumber + currentNumber;
+            int triangularNumber = triangularNumber + currentNumber;
 
             public boolean isNumberSq() {
                 if (enteredNumber[0] == squareNumbers) {
@@ -41,6 +41,7 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, c
             }
         }
     }
+
 
 
     @Override

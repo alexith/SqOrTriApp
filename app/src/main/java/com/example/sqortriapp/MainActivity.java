@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity<integer> extends AppCompatActivity {
 
@@ -38,15 +39,15 @@ public class MainActivity<integer> extends AppCompatActivity {
              }
 
              public boolean isNumberSq() {
-                 if((squareNumberList.contains(enteredNumber)){
-                     return toast;
-                 }else{
-                    return false;
+                 if(squareNumberList.contains(enteredNumber){
+                     Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
                  }
+                 } else {
+                     Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
              }
 
              public boolean isTheNumberTri(){
-                 if((currentTriNumber.contains(enteredNumber)){
+                 if((triangularNumbersList.contains(enteredNumber)){
                      return true;
                  }else{
                      return false;

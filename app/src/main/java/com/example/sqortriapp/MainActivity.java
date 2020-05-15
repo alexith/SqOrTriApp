@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, currentNumber> extends AppCompatActivity {
+public class MainActivity<squareNumber, triangularNumber, integer, currentNumber> extends AppCompatActivity {
 
     public boolean showMeTheTruth(View view){
 

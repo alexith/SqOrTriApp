@@ -39,8 +39,8 @@ public class MainActivity<integer> extends AppCompatActivity {
                 if(squareNumberList.contains(enteredNumber){
                     Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
                 }
-                } else{
-                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
+            } else{
+                Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
             }
              public boolean isTheNumberTri() {
                 if((triangularNumbersList.contains(enteredNumber)){

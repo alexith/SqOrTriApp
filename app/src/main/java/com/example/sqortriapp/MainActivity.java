@@ -14,14 +14,14 @@ public class MainActivity<integer> extends AppCompatActivity {
 
          class someNumbers{
 
-             int i = 1;
-             int n = 1;
-             int currentTriNumber = 1;
-             int currentSqNumber = 1;
+             private int i = 1;
+             private int n = 1;
+             private int currentTriNumber = 1;
+             private int currentSqNumber = 1;
 
 
-             someNumbers<integer>[] squareNumberList = new someNumbers[0];
-             someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
+             private someNumbers<integer>[] squareNumberList = new someNumbers[0];
+             private someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
 
 
              for(n<=100){

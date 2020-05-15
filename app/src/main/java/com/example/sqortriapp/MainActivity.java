@@ -31,8 +31,8 @@ public class MainActivity<squareNumber, eachNumber, triangularNumber> extends Ap
     }
 
     public class someNumbers{
-        int enteredNumbers;
 
+        int enteredNumbers;
         int eachNumber;
 
     }

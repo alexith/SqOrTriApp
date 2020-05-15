@@ -6,11 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity<toast> extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    public void showMeTheTruth(View view){
+    public boolean showMeTheTruth(View view){
 
         EditText enteredNumber = (EditText) findViewById(R.id.enteredNumber);
+        public boolean isTheNumberTri(){
+            if(enteredNumber = triangularNumbers){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public boolean isNumberSq(){
+            if(enteredNumber = squareNumbers){
+                return true;
+            } else {
+                return false;
+            }
+        }
 
     }
 

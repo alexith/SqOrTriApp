@@ -6,43 +6,46 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity<squareNumber, eachNumber, triangularNumber> extends AppCompatActivity {
+public class MainActivity<squareNumber, eachNumber, triangularNumber, integer, currentNumber> extends AppCompatActivity {
 
     public boolean showMeTheTruth(View view){
 
-        EditText enteredNumber = (EditText) findViewById(R.id.enteredNumber);
+        final EditText[] enteredNumber = {(EditText) findViewById(R.id.enteredNumber)};
 
-        public boolean isTheNumberTri(){
-            if(enteredNumber = triangularNumbers){
-                return true;
-            } else {
-                return false;
+         class someNumbers{
+
+
+            int enteredNumbers;
+            int currentNumber = 1;
+
+            someNumbers squareNumbers = new someNumbers();
+            someNumbers triangularNumbers = new someNumbers();
+
+            squareNumber = currentNumber * currentNumber;
+
+            triangularNumber = eachNumber + currentNumber;
+
+
+            public boolean isNumberSq() {
+                if (enteredNumber[0] == squareNumbers) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            public boolean isTheNumberTri(){
+                if(enteredNumber[0] == triangularNumbers){
+                    return true;
+                } else {
+                    return false;
+                }
             }
         }
-
-        public boolean isNumberSq(){
-            if(enteredNumber = squareNumbers){
-                return true;
-            } else {
-                return false;
-            }
-        }
-
     }
 
-    public class someNumbers{
 
-        int enteredNumbers;
-        int eachNumber;
 
-    }
-
-    someNumbers squareNumbers = new someNumbers();
-    someNumbers triangularNumbers = new someNumbers();
-
-    squareNumber = eachNumber * eachNumber;
-
-    triangularNumber = eachNumber + 1;
 
 
     @Override

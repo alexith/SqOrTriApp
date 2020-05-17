@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 //This app is will let you know if a number is Square number or Triangular or both or none
@@ -31,8 +32,8 @@ public class MainActivity<integer> extends AppCompatActivity {
             private int currentSqNumber = 1;
 
             //in the class somenumbers we create two new distinc classes triangularNumbersList and squareNumberList
-            private someNumbers<integer>[] triangularNumbersList = new someNumbers[0];
-            private someNumbers<integer>[] squareNumberList = new someNumbers[0];
+            private someNumbers<integer>[] triangularNumbersList = new ArrayList<integer>[0];
+            private someNumbers<integer>[] squareNumberList = new ArrayList<integer>[0];
 
 
             /*loop till index reaches 100 and

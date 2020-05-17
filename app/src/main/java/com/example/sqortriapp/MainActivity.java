@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 //This app is will let you know if a number is Square number or Triangular or both or none
 
 public class MainActivity<integer> extends AppCompatActivity {
@@ -51,7 +53,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             //if the number entered by user in text field is in the list we'll give a toast notification for both list
 
             public boolean isNumberSq() {
-                if(squareNumberList.contains(enteredNumber){
+                if(Arrays.asList(squareNumberList).contains(enteredNumber)){
                     Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
                 } else{
                     Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
@@ -59,7 +61,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             }
 
             public boolean isTheNumberTri() {
-                if((triangularNumbersList.contains(enteredNumber)){
+                if(Arrays.asList(triangularNumbersList).contains(enteredNumber)){
                     Toast.makeText(MainActivity.this, "THe no. is Triangular", Toast.LENGTH_SHORT).show();
                 } else{
                     Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();

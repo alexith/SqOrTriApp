@@ -18,7 +18,7 @@ public class MainActivity<integer> extends AppCompatActivity {
 
         final EditText[] enteredNumber = {findViewById(R.id.enteredNumber)};
 
-        class someNumbers{
+        class someNumbers<I> {
 
             //index no. for triNumberList
             private int i = 1;
@@ -39,13 +39,13 @@ public class MainActivity<integer> extends AppCompatActivity {
             /*loop till index reaches 100 and
             add all the current value related to that particular index to ArrayList*/
 
-            for(i<=100){
+            for(i <= 100) {
                 currentTriNumber = currentTriNumber + i;
                 triangularNumbersList.add(currentTriNumber);
                 n++;
             }
 
-            for(n<=100){
+            for(n <= 100) {
                 currentSqNumber = n*n;
                 squareNumberList.add(currentSqNumber);
                 n++;

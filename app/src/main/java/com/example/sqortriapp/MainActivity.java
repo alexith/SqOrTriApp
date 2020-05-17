@@ -32,8 +32,8 @@ public class MainActivity<integer> extends AppCompatActivity {
             private int currentSqNumber = 1;
 
             //in the class somenumbers we create two new distinc classes triangularNumbersList and squareNumberList
-            private someNumbers<integer>[] triangularNumbersList = new ArrayList<integer>[0];
-            private someNumbers<integer>[] squareNumberList = new ArrayList<integer>[0];
+            private someNumbers<integer>[] triangularNumbersList = new someNumbers<integer>[0];
+            private someNumbers<integer>[] squareNumberList = new someNumbers<integer>[0];
 
 
             /*loop till index reaches 100 and
@@ -46,20 +46,12 @@ public class MainActivity<integer> extends AppCompatActivity {
             }
 
             for(n <= 100) {
-                currentSqNumber = n*n;
+                currentSqNumber = n * n;
                 squareNumberList.add(currentSqNumber);
                 n++;
             }
 
             //if the number entered by user in text field is in the list we'll give a toast notification for both list
-
-            public boolean isNumberSq() {
-                if(Arrays.asList(squareNumberList).contains(enteredNumber)){
-                    Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
-                } else{
-                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
-                }
-            }
 
             public boolean isTheNumberTri() {
                 if(Arrays.asList(triangularNumbersList).contains(enteredNumber)){
@@ -67,6 +59,14 @@ public class MainActivity<integer> extends AppCompatActivity {
                 } else{
                     Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
                     }
+            }
+
+            public boolean isNumberSq() {
+                if(Arrays.asList(squareNumberList).contains(enteredNumber)){
+                    Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
+                }
             }
         }
     }

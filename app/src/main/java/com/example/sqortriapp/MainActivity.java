@@ -47,7 +47,7 @@ public class MainActivity<integer> extends AppCompatActivity {
             }
 
             //if the number entered by user in text field is in the list we'll give a toast notification for both list
-            
+
             public boolean isNumberSq() {
                 if(squareNumberList.contains(enteredNumber){
                     Toast.makeText(MainActivity.this, "THe no. is Square", Toast.LENGTH_SHORT).show();

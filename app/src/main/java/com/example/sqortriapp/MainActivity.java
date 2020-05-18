@@ -32,46 +32,46 @@ public class MainActivity<integer> extends AppCompatActivity {
             /*loop till index reaches 100 and
             add all the current value related to that particular index to ArrayList*/
 
-
-            for(int i = 1; i <= 100; i++) {
-                currentTriNumber = currentTriNumber + i;
-                triangularNumbersList.add(currentTriNumber);
-            }
-
-            for(int n = 1; n <= 100; n++) {
-                currentSqNumber = n * n;
-                squareNumberList.add(currentSqNumber);
-            }
-
-
             //if the number entered by user in text field is in the list we'll give a toast notification for both list
 
             public boolean isTheNumberTri() {
+                int i = 1;
+
+                while(i <= 100) {
+                    currentTriNumber = currentTriNumber + i;
+                    triangularNumbersList.add(currentTriNumber);
+                    i++;
+                }
                 if(Arrays.asList(triangularNumbersList).contains(enteredNumber)){
                     return true;
                 } else{
                     return false;
                     }
+                if(isTheNumberTri() == true){
+                    System.out.println(Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show());
+                } else{
+                    System.out.println(Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show());
+                }
             }
 
             public boolean isNumberSq() {
+                int n = 1;
+
+                while(n <= 100){
+                    currentSqNumber = n * n;
+                    squareNumberList.add(currentSqNumber);
+                    n++;
+                }
                 if (Arrays.asList(squareNumberList).contains(enteredNumber)) {
                     return true;
                 } else {
                     return false;
                 }
-            }
-
-            if(isNumberSq() == true){
-                System.out.println(Toast.makeText(MainActivity.this, "The no. is Square", Toast.LENGTH_SHORT).show());
-            } else{
-                System.out.println(Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show());
-            }
-
-            if(isTheNumberTri() == true){
-                System.out.println(Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show());
-            } else{
-                System.out.println(Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show());
+                if(isNumberSq()){
+                    System.out.println(Toast.makeText(MainActivity.this, "The no. is Square", Toast.LENGTH_SHORT).show());
+                } else{
+                    System.out.println(Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show());
+                }
             }
         }
     }

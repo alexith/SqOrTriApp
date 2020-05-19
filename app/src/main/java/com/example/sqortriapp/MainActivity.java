@@ -18,6 +18,22 @@ public class MainActivity<integer> extends AppCompatActivity {
         Number myNumber = new Number();
 
         myNumber.number = Integer.parseInt(enteredNumber.getText().toString());
+
+        String message = "";
+
+        if (myNumber.isNumberSquare()){
+            if (myNumber.isTriangularNumber()){
+                message = myNumber.number + "is both tri and sq";
+            } else {
+                message = myNumber.number + "is Square, but not triangular.";
+            }
+        } else {
+            if(myNumber.isTriangularNumber()){
+                message = myNumber.number + "is tri, but not square";
+            } else{
+                message = myNumber.number + "neither square nor triangular.";
+            }
+        }
     }
     class Number{
         int number;

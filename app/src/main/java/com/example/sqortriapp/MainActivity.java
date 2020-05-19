@@ -24,9 +24,9 @@ public class MainActivity<integer> extends AppCompatActivity {
             private int currentTriNumber = 1;
             private int currentSqNumber = 1;
 
-            //in the class somenumbers we create two new distinc classes triangularNumbersList and squareNumberList
-            private someNumbers[] triangularNumbersList = new someNumbers[99];
-            private someNumbers[] squareNumberList = new someNumbers[99];
+            //in the class somenumbers we create two new distinct classes triangularNumbersList and squareNumberList
+            someNumbers<integer>[] triangularNumbersList = new someNumbers[99];
+            someNumbers<integer>[] squareNumberList = new someNumbers[99];
 
 
             /*loop till index reaches 100 and
@@ -62,7 +62,7 @@ public class MainActivity<integer> extends AppCompatActivity {
                     squareNumberList.add(currentSqNumber);
                     n++;
                 }
-                if (Arrays.asList(squareNumberList).contains(enteredNumber)) {
+                if(Arrays.asList(squareNumberList).contains(enteredNumber)) {
                     return true;
                 } else {
                     return false;

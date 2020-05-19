@@ -10,6 +10,15 @@ import android.widget.EditText;
 //This app is will let you know if a number is Square number or Triangular or both or none
 
 public class MainActivity<integer> extends AppCompatActivity {
+
+    public void showMeTheTruth(View view) {
+
+        EditText enteredNumber = findViewById(R.id.enteredNumber);
+        Log.i("userEnteredNumber", enteredNumber.getText().toString());
+        Number myNumber = new Number();
+
+        myNumber.number = Integer.parseInt(enteredNumber.getText().toString());
+    }
     class Number{
         int number;
         public boolean isTriangularNumber() {
@@ -36,14 +45,6 @@ public class MainActivity<integer> extends AppCompatActivity {
             }
         }
 
-    public void showMeTheTruth(View view) {
-
-        EditText enteredNumber = findViewById(R.id.enteredNumber);
-        Log.i("userEnteredNumber", enteredNumber.getText().toString());
-        Number myNumber = new Number();
-
-        myNumber.number = Integer.parseInt(enteredNumber.getText().toString());
-        }
     }
 
     @Override

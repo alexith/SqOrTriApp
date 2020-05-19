@@ -15,74 +15,38 @@ import java.util.List;
 //This app is will let you know if a number is Square number or Triangular or both or none
 
 public class MainActivity<integer> extends AppCompatActivity {
+    class someNumber{
+        int number;
+        public boolean isTriangularNumber() {
+            int x = 1;
+            int triangularNumber = 1;
 
-    public boolean showMeTheTruth(View view){
-
-
-
-        final EditText enteredNumber = findViewById(R.id.enteredNumber);
-
-        class someNumbers<I> {
-
-            /*assuming that initially the number is 1 for both list,
-             after that increment is done after loop operation*/
-
-            private
-
-            //in the class somenumbers we create two new distinct classes triangularNumbersList and squareNumberList
-
-            List<someNumbers> triangularNumbersList = new ArrayList<someNumbers>();
-            List<someNumbers> squareNumberList = new ArrayList<someNumbers>();
-
-
-            /*loop till index reaches 100 and
-            add all the current value related to that particular index to ArrayList*/
-
-            //if the number entered by user in text field is in the list we'll give a toast notification for both list
-
-            public boolean isTheNumberTri() {
-                int i = 1;
-                int currentTriNumber = 1;
-
-                while(currentTriNumber < enteredNumber ) {
-                    currentTriNumber = currentTriNumber + i;
-                    i++;
-                }
-                if(Arrays.asList(triangularNumbersList).contains(enteredNumber)){
-                    return true;
-                } else{
-                    return false;
-                    }
-                if(currentTriNumber == enteredNumber){
-                    Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show();
-                } else{
-                    Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
-                }
+            while(triangularNumber < number){
+                x++;
+                triangularNumber = triangularNumber + 1;
             }
-
-            public boolean isNumberSq(){
-                double squareRoot = Math.sqrt(enteredNumber);
-                int n = 1;
-                int currentSqNumber = 1;
-
-                while(currentSqNumber < enteredNumber){
-                    currentSqNumber = n * n;
-                    n++;
-                }
-                if(Arrays.asList(squareNumberList).contains(enteredNumber)) {
-                    return true;
-                } else {
-                    return false;
-                }
-                if(isNumberSq()){
-                    Toast.makeText(MainActivity.this, "The no. is Square", Toast.LENGTH_SHORT).show();
-                } else{
-                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
-                }
+            if(triangularNumber == number){
+                return true;
+            } else{
+                return false;
             }
         }
-    }
+        public boolean isNumberSquare(){
+            double squareRoot = Math.sqrt(number);
 
+            if (squareRoot == Math.floor(squareRoot)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    public boolean showMeTheTruth(View view) {
+
+        EditText enteredNumber = findViewById(R.id.enteredNumber);
+        Number myNumber = new number();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

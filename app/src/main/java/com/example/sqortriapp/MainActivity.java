@@ -3,6 +3,7 @@ package com.example.sqortriapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,14 +18,16 @@ public class MainActivity<integer> extends AppCompatActivity {
 
     public boolean showMeTheTruth(View view){
 
-        final EditText[] enteredNumber = {findViewById(R.id.enteredNumber)};
+
+
+        final EditText enteredNumber = findViewById(R.id.enteredNumber);
 
         class someNumbers<I> {
 
             /*assuming that initially the number is 1 for both list,
              after that increment is done after loop operation*/
-            private int currentTriNumber = 1;
-            private int currentSqNumber = 1;
+
+            private
 
             //in the class somenumbers we create two new distinct classes triangularNumbersList and squareNumberList
 
@@ -39,10 +42,10 @@ public class MainActivity<integer> extends AppCompatActivity {
 
             public boolean isTheNumberTri() {
                 int i = 1;
+                int currentTriNumber = 1;
 
-                while(i <= 100) {
+                while(currentTriNumber < enteredNumber ) {
                     currentTriNumber = currentTriNumber + i;
-                    triangularNumbersList.add(currentTriNumber);
                     i++;
                 }
                 if(Arrays.asList(triangularNumbersList).contains(enteredNumber)){
@@ -50,19 +53,20 @@ public class MainActivity<integer> extends AppCompatActivity {
                 } else{
                     return false;
                     }
-                if(isTheNumberTri() == true){
+                if(currentTriNumber == enteredNumber){
                     Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show();
                 } else{
                     Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
                 }
             }
 
-            public boolean isNumberSq() {
+            public boolean isNumberSq(){
+                double squareRoot = Math.sqrt(enteredNumber);
                 int n = 1;
+                int currentSqNumber = 1;
 
-                while(n <= 100){
+                while(currentSqNumber < enteredNumber){
                     currentSqNumber = n * n;
-                    squareNumberList.add(currentSqNumber);
                     n++;
                 }
                 if(Arrays.asList(squareNumberList).contains(enteredNumber)) {

@@ -14,12 +14,16 @@ public class MainActivity<integer> extends AppCompatActivity {
     public void showMeTheTruth(View view) {
 
         EditText enteredNumber = findViewById(R.id.enteredNumber);
+        String message = "";
+
+        if(enteredNumber.getText().toString().isEmpty()){
+            message = "please enter a number!";
+        }
+
         Log.i("userEnteredNumber", enteredNumber.getText().toString());
         Number myNumber = new Number();
 
         myNumber.number = Integer.parseInt(enteredNumber.getText().toString());
-
-        String message = "";
 
         if (myNumber.isNumberSquare()){
             if (myNumber.isTriangularNumber()){

@@ -48,9 +48,9 @@ public class MainActivity<integer> extends AppCompatActivity {
                     return false;
                     }
                 if(isTheNumberTri() == true){
-                    System.out.println(Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show());
+                    Toast.makeText(MainActivity.this, "The no. is Triangular", Toast.LENGTH_SHORT).show();
                 } else{
-                    System.out.println(Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show());
+                    Toast.makeText(MainActivity.this, "The no. is not Triangular", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -68,9 +68,9 @@ public class MainActivity<integer> extends AppCompatActivity {
                     return false;
                 }
                 if(isNumberSq()){
-                    System.out.println(Toast.makeText(MainActivity.this, "The no. is Square", Toast.LENGTH_SHORT).show());
+                    Toast.makeText(MainActivity.this, "The no. is Square", Toast.LENGTH_SHORT).show();
                 } else{
-                    System.out.println(Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show());
+                    Toast.makeText(MainActivity.this, "The no. is not Square", Toast.LENGTH_SHORT).show();
                 }
             }
         }

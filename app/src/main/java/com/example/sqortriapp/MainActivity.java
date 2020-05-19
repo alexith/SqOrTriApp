@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 //This app is will let you know if a number is Square number or Triangular or both or none
 
@@ -27,17 +28,18 @@ public class MainActivity<integer> extends AppCompatActivity {
 
         if (myNumber.isNumberSquare()){
             if (myNumber.isTriangularNumber()){
-                message = myNumber.number + "is both tri and sq";
+                message = myNumber.number + " is both tri and sq";
             } else {
-                message = myNumber.number + "is Square, but not triangular.";
+                message = myNumber.number + " is Square, but not triangular.";
             }
         } else {
             if(myNumber.isTriangularNumber()){
-                message = myNumber.number + "is tri, but not square";
+                message = myNumber.number + " is tri, but not square";
             } else{
-                message = myNumber.number + "neither square nor triangular.";
+                message = myNumber.number + " neither square nor triangular.";
             }
         }
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
     class Number{
         int number;

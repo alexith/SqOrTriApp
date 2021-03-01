@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-//This app is will let you know if a number is Square number or Triangular or both or none
+//This app will let you know if a number is Square, Triangular, both or none. 
 
 public class MainActivity<integer> extends AppCompatActivity {
 
